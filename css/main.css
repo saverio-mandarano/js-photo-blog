@@ -33,7 +33,7 @@ body {
 }
 
 .wrapper {
-  max-width: 1200px;
+  max-width: 1000px;
   margin: 0 auto;
 }
 
@@ -45,9 +45,7 @@ body {
 }
 
 .card {
-  margin: 20px 0;
   width: calc(100% / 3 - (60px / 3));
-  border: solid 2px black;
 }
 
 /* Generals */
@@ -55,4 +53,10 @@ h1 {
   text-align: center;
   font-size: 5rem;
   padding: 15px;
+  margin-bottom: 10px;
 }
+
+/* 
+Bonus
+rendi la pagina responsive, in modo che su mobile e tablet le foto si dispongano man mano una sotto l’altra 
+ed il titolo abbia una dimensione adeguata */

@@ -28,7 +28,9 @@ axios.get(endpoint)
             // valorizziamo la variabile di accumulo di output (stringa)
             postsOutput += `
             <div class="card p-3">
-                <img src="${url}" class="card-img">
+                <div class="img-wrapper">
+                    <img src="${url}" class="card-img-top" />
+                </div>
                 <h2 class="title-font">${title}</h2>
                 <p class="date-font">${date}</p>
             </div>`;
