@@ -28,11 +28,11 @@ axios.get(endpoint)
             // valorizziamo la variabile di accumulo di output (stringa)
             postsOutput += `
             <div class="card p-3">
-                <div class="img-wrapper">
-                    <img src="${url}" class="card-img-top" />
-                </div>
-                <h2 class="title-font">${title}</h2>
-                <p class="date-font">${date}</p>
+                <img src="${url}" class="card-img-top" />
+                <div class="card-body">
+                    <h2 class="title-font">${title}</h2>
+                    <p class="date-font">${date}</p>
+                </div> 
             </div>`;
 
            // console.log("alla iterazione numero", index, postsOutput);
