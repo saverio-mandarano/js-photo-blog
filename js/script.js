@@ -12,7 +12,7 @@ axios.get(endpoint)
     .then(response => {
         // otteniamo l'array di oggetti dall'API
         const posts = response.data;
-        // console.log(posts);
+         console.log(posts);
 
         // var di accumulo stringa output
         let postsOutput = "";

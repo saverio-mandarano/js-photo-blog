@@ -1,3 +1,10 @@
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 /* Google Fonts - titoli:  ‘Edu Tas Beginner’, sans-serif; */
 .title-font {
   font-family: "Edu TAS Beginner", sans-serif;
@@ -14,4 +21,33 @@
   font-weight: 400;
   font-style: normal;
   font-variation-settings: "wdth" 100;
+}
+
+/* Layout */
+header {
+  background-image: url("../img/wall.png");
+  background-size: cover;
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+#container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.card {
+  margin: 20px 0;
+  width: calc(100% / 3 - (60px / 3));
+  border: solid 2px black;
+}
+
+/* Generals */
+h1 {
+  text-align: center;
 }
