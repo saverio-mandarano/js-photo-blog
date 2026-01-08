@@ -12,7 +12,7 @@ axios.get(endpoint)
     .then(response => {
         // otteniamo l'array di oggetti dall'API
         const posts = response.data;
-         console.log(posts);
+        console.log(posts);
 
         // var di accumulo stringa output
         let postsOutput = "";
@@ -21,21 +21,18 @@ axios.get(endpoint)
         posts.forEach((post, index) => {
 
             // destrutturiamo l'oggeto
-            // const title = post.title;
-            // const body = post.body;
+            const { title, date } = post;
 
-            const { title, body } = post;
-
-            // console.log("il valore del titolo è :", title, "il valore del testo è :", body);
+             console.log("il valore del titolo è :", title, "il valore del testo è :", date);
 
             // valorizziamo la variabile di accumulo di output (stringa)
             postsOutput += `
             <div class="card">
                 <h2 class="title-font">${title}</h2>
-                <p class="date-font">${body}</p>
+                <p class="date-font">${date}</p>
             </div>`;
 
-            console.log("alla iterazione numero", index, postsOutput);
+           // console.log("alla iterazione numero", index, postsOutput);
 
         });
 
