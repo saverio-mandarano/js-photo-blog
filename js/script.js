@@ -44,4 +44,10 @@ axios.get(endpoint)
 
 
     })
-    //.catch()
+    .catch(error => {
+        console.error(error.message);
+    })
+
+    .finally(() => {
+        console.log('end call');
+    })
