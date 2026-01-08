@@ -3,7 +3,7 @@ const outputCont = document.getElementById("container");
 // console.log(outputCont);
 
 // creiamo ref a endpoint
-const endpoint = "https://jsonplaceholder.typicode.com/posts?_limit=15";
+const endpoint = "https://lanciweb.github.io/demo/api/pictures/";
 
 
 
