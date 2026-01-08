@@ -21,13 +21,14 @@ axios.get(endpoint)
         posts.forEach((post, index) => {
 
             // destrutturiamo l'oggeto
-            const { title, date } = post;
+            const { title, date, url } = post;
 
-             console.log("il valore del titolo è :", title, "il valore del testo è :", date);
+            //console.log("il valore del titolo è :", title, "il valore del testo è :", date);
 
             // valorizziamo la variabile di accumulo di output (stringa)
             postsOutput += `
             <div class="card">
+                <img src="${url}" class="card-img-top">
                 <h2 class="title-font">${title}</h2>
                 <p class="date-font">${date}</p>
             </div>`;
