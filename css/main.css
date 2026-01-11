@@ -72,6 +72,6 @@ h1 {
 
 .overlay-content button {
   position: absolute; /* rispetto al div interno dell'overlay */
-  top: -45px;
-  left: 260px;
+  top: -85px;
+  left: 220px;
 }
