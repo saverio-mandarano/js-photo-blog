@@ -53,7 +53,7 @@ Spostandosi col mouse sopra le foto, queste si zoommano, ruotano di 10 gradi e l
 il tutto in manierà fluida. Inoltre il mouse diventa un puntatore, per far capire all’utente che può cliccare. */
 .card img:hover {
   cursor: pointer;
-  transform: rotateZ(10deg);
+  transform: rotateZ(10deg) scale(1.1);
 }
 
 .img-wrapper {
