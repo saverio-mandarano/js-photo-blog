@@ -83,10 +83,3 @@ axios.get(endpoint)
     .finally(() => {
         console.log('end call');
     })
-
-
-
-// Bonus 2
-// rendi la pagina responsive, in modo che su mobile e tablet le foto si dispongano man mano una sotto l’altra ed il 
-// titolo abbia una dimensione adeguata
-    
