@@ -5,7 +5,9 @@ const outputCont = document.getElementById("container");
 // creiamo ref a endpoint
 const endpoint = "https://lanciweb.github.io/demo/api/pictures/";
 
-
+// seleziono frecce
+const prevButton = document.getElementById("prev");
+const nextButton = document.getElementById("next");
 
 // creiamo la chiamata ajax all'endpoint
 axios.get(endpoint)
