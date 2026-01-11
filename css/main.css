@@ -72,12 +72,6 @@ h1 {
 
 .overlay-content button {
   position: absolute; /* rispetto al div interno dell'overlay */
-  top: -100px;
-  right: -20px;
-}
-
-.overlay-content img {
-  max-width: 80%;
-  max-height: 80%;
-  border-radius: 10px;
+  top: -45px;
+  left: 260px;
 }
