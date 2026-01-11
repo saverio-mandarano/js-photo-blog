@@ -57,6 +57,10 @@ il tutto in manierà fluida. Inoltre il mouse diventa un puntatore, per far capi
   transition: transform 0.5s;
 }
 
+.card .img-wrapper:hover .icon {
+  opacity: 0;
+}
+
 .img-wrapper {
   position: relative; /*come riferimento relativo per posizionare il pin sopra le immagini */
 }
