@@ -39,6 +39,12 @@ axios.get(endpoint)
         // inseriamo in pagina le card accumulate
         outputCont.innerHTML = postsOutput;
 
+        // Facciamo sì che cliccando una qualunque foto l’overlay ricompaia.
+        // Per prima cosa seleziono gli elementi dal DOM:
+        const overlay = document.querySelector(`.overlay`);
+        const overlayImg = document.querySelector(`.overlay-img`);
+        const overlayBtn = document.querySelector(`.overlay-btn`);
+
         // seleziono tutte le card appena create
         const cards = document.querySelectorAll(`.card`);
 
@@ -47,10 +53,18 @@ axios.get(endpoint)
         cards.forEach( card => {
             const img = card.querySelector(`img`); /*seleziono l’immagine interna alla card corrente.*/
 
-            img.addEventListener(`click`, () => {
-            console.log(`Hai cliccato su una card!`);
+            img.addEventListener(`click`, () => { 
+            // console.log(`click`);
 
+            overlay.classList.remove(`overlay-display`); //faccio apparire l'overlay rimuovendo la classe che lo nasconde
             });
+
+
+        });
+
+        // Cliccando il button "Close", l’overlay scompare nuovamente.
+        overlayBtn.addEventListener(`click`, () => {
+            overlay.classList.add(`overlay-display`);
         });
 
 
@@ -64,11 +78,6 @@ axios.get(endpoint)
     })
 
 
-// Facciamo sì che cliccando una qualunque foto l’overlay ricompaia.
-// Per prima cosa seleziono gli elementi dal DOM:
-const overlay = document.querySelector(`.overlay`);
-const overlayImg = document.querySelector(`.overlay-img`);
-const overlayBtn = document.querySelector(`.overlay-btn`);
 
 
 
@@ -77,7 +86,7 @@ const overlayBtn = document.querySelector(`.overlay-btn`);
 
 
 
-// Cliccando invece il button di chiusura, l’overlay scompare nuovamente.
+
 
 // Inseriamo il pezzo di logica finale: quando una foto viene cliccata, dobbiamo fare in modo che sia proprio quella
 // foto a essere mostrata all’interno dell’overlay. Ci sono diversi modi di farlo, prova a sperimentare 🙂
