@@ -48,8 +48,12 @@ body {
   width: calc(100% / 3 - (60px / 3));
 }
 
-.card img {
+/* Bonus
+Spostandosi col mouse sopra le foto, queste si zoommano, ruotano di 10 gradi e la loro ombra aumenta,
+il tutto in manierà fluida. Inoltre il mouse diventa un puntatore, per far capire all’utente che può cliccare. */
+.card img:hover {
   cursor: pointer;
+  transform: rotateZ(10deg);
 }
 
 .img-wrapper {

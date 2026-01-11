@@ -84,9 +84,7 @@ axios.get(endpoint)
         console.log('end call');
     })
 
-// Bonus
-// Spostandosi col mouse sopra le foto, queste si zoommano, ruotano di 10 gradi e la loro ombra aumenta,
-// il tutto in manierà fluida.
+
 
 // Bonus 2
 // rendi la pagina responsive, in modo che su mobile e tablet le foto si dispongano man mano una sotto l’altra ed il 
