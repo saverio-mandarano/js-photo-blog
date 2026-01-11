@@ -74,13 +74,11 @@ h1 {
 }
 
 .overlay-content {
-  position: relative; /* punto di riferimento per il bottone */
-}
-
-.overlay-content button {
-  position: absolute; /* rispetto al div interno dell'overlay */
-  top: -85px;
-  left: 220px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
 }
 
 .overlay-img {
