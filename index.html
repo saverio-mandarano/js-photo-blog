@@ -28,6 +28,15 @@
       rel="stylesheet"
     />
 
+    <!-- Font Awesome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
     <!-- Bootstrap Js -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
@@ -57,9 +66,16 @@
         <!-- div interno che fungerà da riferimento per posizionare il bottone e l'immagine -->
         <div class="overlay-content">
           <button type="button" class="btn btn-lg btn-primary overlay-btn">
-            Close
+            X
           </button>
-          <img src="img/random.png" class="overlay-img" />
+          <!-- Carousel Bonus -->
+          <div class="carousel">
+            <i id="prev" class="fa-solid fa-circle-arrow-left"></i>
+
+            <img src="img/random.png" class="overlay-img" />
+
+            <i id="next" class="fa-solid fa-circle-arrow-right"></i>
+          </div>
         </div>
       </div>
 
