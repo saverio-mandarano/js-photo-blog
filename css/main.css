@@ -70,7 +70,7 @@ h1 {
 }
 
 .overlay-display {
-  display: none;
+  display: none; /* Facciamo sparire l’overlay con l’aiuto di una classe CSS */
 }
 
 .overlay-content {
