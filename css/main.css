@@ -56,7 +56,22 @@ h1 {
   margin-bottom: 10px;
 }
 
-/* 
-Bonus
-rendi la pagina responsive, in modo che su mobile e tablet le foto si dispongano man mano una sotto l’altra 
-ed il titolo abbia una dimensione adeguata */
+/* Overlay */
+.overlay {
+  position: fixed; /* fisso nella finestra, anche se scrollo la pagina. */
+  width: 100%; /* gli assegno dimensioni piene */
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.overlay-content {
+  position: relative; /* punto di riferimento per il bottone */
+}
+
+.overlay-content button {
+  position: absolute; /* rispetto al div interno dell'overlay */
+  top: -100px;
+  right: -20px;
+}

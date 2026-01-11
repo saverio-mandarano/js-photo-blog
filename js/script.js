@@ -34,9 +34,6 @@ axios.get(endpoint)
                     <p class="date-font">${date}</p>
                 </div> 
             </div>`;
-
-           // console.log("alla iterazione numero", index, postsOutput);
-
         });
 
         // inseriamo in pagina le card accumulate
