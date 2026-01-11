@@ -81,15 +81,9 @@ axios.get(endpoint)
         console.log('end call');
     })
 
-
-// Inseriamo il pezzo di logica finale: quando una foto viene cliccata, dobbiamo fare in modo che sia proprio quella
-// foto a essere mostrata all’interno dell’overlay.
-
-
-
-// Bonus
+    // Bonus
 // Spostandosi col mouse sopra le foto, queste si zoommano, ruotano di 10 gradi e la loro ombra aumenta,
-// il tutto in manierà fluida. Inoltre il mouse diventa un puntatore, per far capire all’utente che può cliccare.
+// il tutto in manierà fluida. Inoltre .
 
 // Bonus 2
 // rendi la pagina responsive, in modo che su mobile e tablet le foto si dispongano man mano una sotto l’altra ed il 

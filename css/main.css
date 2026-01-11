@@ -48,6 +48,10 @@ body {
   width: calc(100% / 3 - (60px / 3));
 }
 
+.card img {
+  cursor: pointer;
+}
+
 /* Generals */
 h1 {
   text-align: center;
