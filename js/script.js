@@ -39,6 +39,20 @@ axios.get(endpoint)
         // inseriamo in pagina le card accumulate
         outputCont.innerHTML = postsOutput;
 
+        // seleziono tutte le card appena create
+        const cards = document.querySelectorAll(`.card`);
+
+
+        // Adesso creiamo un evento di click sulle card:
+        cards.forEach( card => {
+            const img = card.querySelector(`img`); /*seleziono l’immagine interna alla card corrente.*/
+
+            img.addEventListener(`click`, () => {
+            console.log(`Hai cliccato su una card!`);
+
+            });
+        });
+
 
     })
     .catch(error => {
@@ -55,10 +69,9 @@ axios.get(endpoint)
 const overlay = document.querySelector(`.overlay`);
 const overlayImg = document.querySelector(`.overlay-img`);
 const overlayBtn = document.querySelector(`.overlay-btn`);
-const cards = document.querySelectorAll(`.card`);
 
 
-// Adesso creiamo un evento di click sulle card:
+
 
 
 
