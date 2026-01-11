@@ -51,6 +51,18 @@ axios.get(endpoint)
 
 
 // Facciamo sì che cliccando una qualunque foto l’overlay ricompaia.
+// Per prima cosa seleziono gli elementi dal DOM:
+const overlay = document.querySelector(`.overlay`);
+const overlayImg = document.querySelector(`.overlay-img`);
+const overlayBtn = document.querySelector(`.overlay-btn`);
+const cards = document.querySelectorAll(`.card`);
+
+
+// Adesso creiamo un evento di click sulle card:
+
+
+
+
 
 // Cliccando invece il button di chiusura, l’overlay scompare nuovamente.
 
