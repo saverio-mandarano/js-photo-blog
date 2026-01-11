@@ -1,3 +1,16 @@
 /* Bonus 
 rendi la pagina responsive, in modo che su mobile e tablet le foto si dispongano man mano una sotto l’altra ed il 
 titolo abbia una dimensione adeguata*/
+
+/* Small screen */
+@media screen and (max-width: 576px) {
+  .card {
+    width: calc(100% - 20px);
+  }
+
+  .wrapper {
+    max-width: 70%;
+  }
+}
+
+/* Medium screen */
