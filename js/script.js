@@ -56,6 +56,10 @@ axios.get(endpoint)
             img.addEventListener(`click`, () => { 
             // console.log(`click`);
 
+            // Quando una foto viene cliccata, dobbiamo fare in modo che sia proprio quella foto a essere mostrata 
+            // all’interno dell’overlay:
+            overlayImg.src = img.src; // imposto la src dell'img overlay uguale a src dell'img cliccata.
+
             overlay.classList.remove(`overlay-display`); //faccio apparire l'overlay rimuovendo la classe che lo nasconde
             });
 
@@ -78,18 +82,10 @@ axios.get(endpoint)
     })
 
 
-
-
-
-
-
-
-
-
-
-
 // Inseriamo il pezzo di logica finale: quando una foto viene cliccata, dobbiamo fare in modo che sia proprio quella
-// foto a essere mostrata all’interno dell’overlay. Ci sono diversi modi di farlo, prova a sperimentare 🙂
+// foto a essere mostrata all’interno dell’overlay.
+
+
 
 // Bonus
 // Spostandosi col mouse sopra le foto, queste si zoommano, ruotano di 10 gradi e la loro ombra aumenta,
