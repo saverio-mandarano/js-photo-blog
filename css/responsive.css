@@ -2,15 +2,16 @@
 rendi la pagina responsive, in modo che su mobile e tablet le foto si dispongano man mano una sotto l’altra ed il 
 titolo abbia una dimensione adeguata*/
 
+/* Medium screen */
+@media screen and (max-width: 992px) {
+  .card {
+    width: calc(100% / 2 - (40px / 2));
+  }
+}
+
 /* Small screen */
 @media screen and (max-width: 576px) {
   .card {
     width: calc(100% - 20px);
   }
-
-  .wrapper {
-    max-width: 70%;
-  }
 }
-
-/* Medium screen */
