@@ -54,6 +54,7 @@ il tutto in manierà fluida. Inoltre il mouse diventa un puntatore, per far capi
 .card img:hover {
   cursor: pointer;
   transform: rotateZ(10deg) scale(1.1);
+  transition: transform 0.5s;
 }
 
 .img-wrapper {
