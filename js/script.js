@@ -28,7 +28,10 @@ axios.get(endpoint)
             // valorizziamo la variabile di accumulo di output (stringa)
             postsOutput += `
             <div class="card p-3">
-                <img src="${url}" class="card-img-top" />
+                <div class="img-wrapper">
+                    <img src="${url}" class="card-img-top" />
+                    <img src="img/pin.svg" class="icon" />
+                </div>
                 <div class="card-body">
                     <h2 class="title-font">${title}</h2>
                     <p class="date-font">${date}</p>
@@ -81,9 +84,9 @@ axios.get(endpoint)
         console.log('end call');
     })
 
-    // Bonus
+// Bonus
 // Spostandosi col mouse sopra le foto, queste si zoommano, ruotano di 10 gradi e la loro ombra aumenta,
-// il tutto in manierà fluida. Inoltre .
+// il tutto in manierà fluida.
 
 // Bonus 2
 // rendi la pagina responsive, in modo che su mobile e tablet le foto si dispongano man mano una sotto l’altra ed il 

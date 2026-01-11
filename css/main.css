@@ -52,6 +52,17 @@ body {
   cursor: pointer;
 }
 
+.img-wrapper {
+  position: relative; /*come riferimento relativo per posizionare il pin sopra le immagini */
+}
+
+.icon {
+  position: absolute;
+  top: -8%;
+  left: 46%;
+  width: 9%;
+}
+
 /* Generals */
 h1 {
   text-align: center;
