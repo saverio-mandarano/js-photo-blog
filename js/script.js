@@ -90,6 +90,22 @@ axios.get(endpoint)
             overlay.classList.add(`overlay-display`);
         });
 
+        nextButton.addEventListener("click", () => {
+            currentIndex++;
+            if (currentIndex >= carouselGallery.length){
+                currentIndex = 0;
+            } 
+            overlayImg.src = carouselGallery[currentIndex].url;
+        });
+
+        prevButton.addEventListener("click", () => {
+            currentIndex--;
+            if (currentIndex < 0){
+                currentIndex = carouselGallery.length - 1;
+            } 
+            overlayImg.src = carouselGallery[currentIndex].url;
+        });
+
 
     })
     .catch(error => {
