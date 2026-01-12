@@ -10,8 +10,8 @@ const prevButton = document.getElementById("prev");
 const nextButton = document.getElementById("next");
 
 // array globale per id e rispettiva immagine
-let carousel = []; 
-let j = 0;
+let carouselGallery = []; 
+let currentIndex = 0;
 
 // creiamo la chiamata ajax all'endpoint
 axios.get(endpoint)
@@ -20,7 +20,7 @@ axios.get(endpoint)
         const posts = response.data;
         console.log(posts);
 
-        carousel = posts;
+        carouselGallery = posts;
 
         // var di accumulo stringa output
         let postsOutput = "";
@@ -32,7 +32,7 @@ axios.get(endpoint)
             const { title, date, url, id } = post;
 
             // salvo nell'array url e id per carousel
-            carousel[index] = { url: url, id: id };
+            carouselGallery[index] = { url: url, id: id };
 
             //console.log("il valore del titolo è :", title, "il valore del testo è :", date);
             console.log("il valore dell'id è :", id);
@@ -76,6 +76,10 @@ axios.get(endpoint)
             overlayImg.src = img.src; // imposto la src dell'img overlay uguale a src dell'img cliccata.
 
             overlay.classList.remove(`overlay-display`); //faccio apparire l'overlay rimuovendo la classe che lo nasconde
+
+            // Troviamo l'id dell'immagine corrente:
+            currentIndex = img.id;
+            console.log(`l'id corrente è: `, currentIndex);
             });
 
 
