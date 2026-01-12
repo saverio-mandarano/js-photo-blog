@@ -31,7 +31,7 @@ axios.get(endpoint)
             // destrutturiamo l'oggetto
             const { title, date, url, id } = post;
 
-            // salvo nell'array url e id per carousel
+            // salvo nell'array url e relativo id per ciascuno img del carousel
             carouselGallery[index] = { url: url, id: id };
 
             //console.log("il valore del titolo è :", title, "il valore del testo è :", date);
@@ -73,16 +73,13 @@ axios.get(endpoint)
 
             // Quando una foto viene cliccata, dobbiamo fare in modo che sia proprio quella foto a essere mostrata 
             // all’interno dell’overlay:
-            overlayImg.src = img.src; // imposto la src dell'img overlay uguale a src dell'img cliccata.
+            currentIndex = parseInt(img.id);   // Troviamo l'id dell'immagine corrente: è stringa da convertire in numero.
+            console.log(`l'id corrente è: `, currentIndex);
+
+            overlayImg.src = carouselGallery[currentIndex].url;  // imposto la src dell'img overlay uguale a src dell'img cliccata.
 
             overlay.classList.remove(`overlay-display`); //faccio apparire l'overlay rimuovendo la classe che lo nasconde
-
-            // Troviamo l'id dell'immagine corrente:
-            currentIndex = img.id;
-            console.log(`l'id corrente è: `, currentIndex);
             });
-
-
         });
 
         // Cliccando il button "Close", l’overlay scompare nuovamente.
