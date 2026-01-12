@@ -73,7 +73,7 @@ axios.get(endpoint)
 
             // Quando una foto viene cliccata, dobbiamo fare in modo che sia proprio quella foto a essere mostrata 
             // all’interno dell’overlay:
-            currentIndex = parseInt(img.id);   // Troviamo l'id dell'immagine corrente: è stringa da convertire in numero.
+            currentIndex = parseInt(img.id) - 1 ;   // Troviamo l'id dell'immagine corrente: è stringa da convertire in numero. Sottraggo uno poichè`l'id iniziano da 1 mentre g;li indici degli array da 0.
             console.log(`l'id corrente è: `, currentIndex);
 
             overlayImg.src = carouselGallery[currentIndex].url;  // imposto la src dell'img overlay uguale a src dell'img cliccata.
